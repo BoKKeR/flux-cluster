@@ -3,17 +3,11 @@ kubernetes:
   children:
     master:
       hosts:
-        debian01:
+        cat01:
           ansible_user: bokker
-          ansible_host: 10.0.0.31
-        debian02:
-          ansible_user: bokker
-          ansible_host: 10.0.0.32
-        debian03:
-          ansible_user: bokker
-          ansible_host: 10.0.0.33
+          ansible_host: 10.0.0.11
     worker:
       hosts:
-        debian04:
+        cat03:
           ansible_user: bokker
-          ansible_host: 10.0.0.34
+          ansible_host: 10.0.0.13
