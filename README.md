@@ -76,8 +76,8 @@ Before we get started everything below must be taken into consideration, you mus
     su -
     apt update
     apt install -y sudo
-    usermod -aG sudo ${username}
-    echo "${username} ALL=(ALL) NOPASSWD:ALL" | tee /etc/sudoers.d/${username}
+    usermod -aG sudo bokker
+    echo "bokker ALL=(ALL) NOPASSWD:ALL" | tee /etc/sudoers.d/bokker
     exit
     newgrp sudo
     sudo apt update

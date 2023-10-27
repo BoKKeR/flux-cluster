@@ -88,6 +88,8 @@ spec:
       enabled: true
       endpoints: &cp
         - 10.0.0.11
+        - 10.0.0.12
+        - 10.0.0.13
       serviceMonitor:
         metricRelabelings:
           # Remove duplicate labels provided by k3s
