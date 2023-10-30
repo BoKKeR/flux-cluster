@@ -25,7 +25,7 @@ spec:
             name: mosquitto
         volumeMounts:
         - mountPath: "/mosquitto/config"
-          subPath: cat_mosquitto
+          subPath: mosquitto
           name: unraid-storage
         ports:
           - containerPort: 1883
