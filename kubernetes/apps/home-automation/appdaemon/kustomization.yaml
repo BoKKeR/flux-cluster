@@ -4,8 +4,8 @@ kind: Kustomization
 namespace: home-automation
 
 resources:
-  - unraid-pvc.yaml
-  - esphome
-  - mosquitto
-  - pihole
-  - appdaemon
+  - configMap.yaml
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+  - secret.sops.yaml
