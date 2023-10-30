@@ -33,7 +33,7 @@ spec:
 ingress:
   main:
     enabled: true
-    ingressClassName: home
+    ingressClassName: external
     annotations:
       external-dns.alpha.kubernetes.io/target: "home.${SECRET_DOMAIN}"
       hajimari.io/icon: video-input-antenna
