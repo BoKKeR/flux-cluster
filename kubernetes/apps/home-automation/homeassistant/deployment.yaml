@@ -30,3 +30,5 @@ spec:
         - mountPath: "/config"
           subPath: home_assistant
           name: unraid-storage
+        ports:
+        - containerPort: 8123
