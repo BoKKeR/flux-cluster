@@ -11,3 +11,4 @@ resources:
   - appdaemon
   - zigbee2mqtt
   - homeassistant
+  - pihole2
