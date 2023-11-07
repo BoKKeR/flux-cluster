@@ -5,5 +5,4 @@ namespace: monitoring
 resources:
   - configMap.yaml
   - deployment.yaml
-  - service.yaml
   - secret.sops.yaml
