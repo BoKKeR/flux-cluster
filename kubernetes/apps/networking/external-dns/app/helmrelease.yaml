@@ -43,7 +43,6 @@ spec:
       - --cloudflare-proxied
       - --crd-source-apiversion=externaldns.k8s.io/v1alpha1
       - --crd-source-kind=DNSEndpoint
-      - --policy=upsert-only
       - --provider=pihole
       - --pihole-server=http://10.0.0.5
       - --registry=noop
