@@ -33,21 +33,11 @@ spec:
           secretKeyRef:
             name: external-dns-secret
             key: api-token
-      - name: EXTERNAL_DNS_PIHOLE_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: pihole-password
-            key: pihole-password
     extraArgs:
       - --ingress-class=external
       - --cloudflare-proxied
       - --crd-source-apiversion=externaldns.k8s.io/v1alpha1
       - --crd-source-kind=DNSEndpoint
-      - --provider=pihole
-      - --pihole-server=http://10.0.0.5
-      - --registry=noop
-      - --source=service
-      - --source=ingress
     policy: sync
     sources: ["crd", "ingress"]
     txtPrefix: k8s.
@@ -57,4 +47,3 @@ spec:
       enabled: true
     podAnnotations:
       secret.reloader.stakater.com/reload: external-dns-secret
-
