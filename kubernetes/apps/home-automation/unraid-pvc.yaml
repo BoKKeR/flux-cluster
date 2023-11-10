@@ -2,6 +2,30 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
+  name: unraid-pv-2
+spec:
+  capacity:
+    storage: 10G
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: 10.0.0.168
+    path: /mnt/user/kubernetes/test
+  mountOptions:
+    - nfsvers=4.2
+    - tcp
+    - intr
+    - hard
+    - relatime
+    - nocto
+    - noacl
+    - nconnect=8
+    - rsize=131072
+    - wsize=131072
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
   name: unraid-pv
 spec:
   capacity:
@@ -45,7 +69,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteMany
-  volumeName: unraid-pv
+  volumeName: unraid-pv-2
   storageClassName: "local-unraid"
   resources:
     requests:
