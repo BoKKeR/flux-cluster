@@ -4,6 +4,7 @@ kind: PersistentVolume
 metadata:
   name: unraid-pv
 spec:
+  storageClassName: "local-unraid"
   capacity:
     storage: 10G
   accessModes:
