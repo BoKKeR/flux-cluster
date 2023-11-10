@@ -32,6 +32,20 @@ spec:
   accessModes:
     - ReadWriteMany
   volumeName: unraid-pv
+  storageClassName: ""
+  resources:
+    requests:
+      storage: 10G
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: unraid-pvc-2
+  namespace: home-automation
+spec:
+  accessModes:
+    - ReadWriteMany
+  volumeName: unraid-pv
   storageClassName: "local-unraid"
   resources:
     requests:
