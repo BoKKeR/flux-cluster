@@ -6,10 +6,10 @@ namespace: home-automation
 resources:
   - unraid-pvc.yaml
   - namespace.yaml
-#  - esphome
-#  - mosquitto
+  - esphome
+  - mosquitto
   #- pihole
-#  - appdaemon
-#  - zigbee2mqtt
-#  - homeassistant
+  - appdaemon
+  - zigbee2mqtt
+  - homeassistant
   # - pihole2
