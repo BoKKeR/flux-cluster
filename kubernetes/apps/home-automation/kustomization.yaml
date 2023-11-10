@@ -8,7 +8,7 @@ resources:
   - esphome
   - mosquitto
   #- pihole
-  #- appdaemon
+  - appdaemon
   - zigbee2mqtt
   - homeassistant
   # - pihole2
