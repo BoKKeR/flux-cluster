@@ -4,7 +4,7 @@ metadata:
   namespace: home-automation
   name: home-assistant
 spec:
-  ingressClassName: nginx
+  ingressClassName: external
   rules:
   - host: ha.tnorbert.com
     http:
