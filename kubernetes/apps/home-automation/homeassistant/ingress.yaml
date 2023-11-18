@@ -3,6 +3,8 @@ kind: Ingress
 metadata:
   namespace: home-automation
   name: home-assistant
+  annotations:
+    external-dns.alpha.kubernetes.io/target: "ha.tnorbert.com"
 spec:
   ingressClassName: external
   rules:
