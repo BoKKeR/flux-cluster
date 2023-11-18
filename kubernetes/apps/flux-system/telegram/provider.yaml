@@ -15,9 +15,9 @@ apiVersion: notification.toolkit.fluxcd.io/v1beta2
 kind: Alert
 metadata:
   name: telegram
-  namespace: flagger-system
+  namespace: flux-system
 spec:
-  summary: "Flagger impacted in us-east-2"
+  summary: "Flux Flagger"
   providerRef:
     name: telegram
   eventSeverity: error
