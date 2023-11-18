@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: external
   rules:
-  - host: test2.tnorbert.com
+  - host: ha.tnorbert.com
     http:
       paths:
       - path: /
