@@ -4,11 +4,11 @@ metadata:
   namespace: home-automation
   name: home-assistant
   annotations:
-    external-dns.alpha.kubernetes.io/target: "ha.tnorbert.com"
+    external-dns.alpha.kubernetes.io/target: "test.tnorbert.com"
 spec:
   ingressClassName: external
   rules:
-  - host: ha.tnorbert.com
+  - host: test.tnorbert.com
     http:
       paths:
       - path: /
