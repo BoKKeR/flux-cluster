@@ -20,7 +20,7 @@ spec:
   summary: "Flux Flagger"
   providerRef:
     name: telegram
-  eventSeverity: error
+  eventSeverity: info
   eventSources:
     - kind: HelmRepository
       name: '*'
