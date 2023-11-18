@@ -7,6 +7,6 @@ metadata:
 spec:
   type: telegram
   address: https://api.telegram.org
-  channel: -1001116967488
+  channel: "-1001116967488"
   secretRef:
     name: fluxcdbot
