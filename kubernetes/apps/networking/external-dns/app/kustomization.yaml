@@ -7,3 +7,4 @@ resources:
   - ./secret.sops.yaml
   - ./pihole.sops.yaml
   - ./helmrelease.yaml
+  - ./pihole-external-dns.yaml
