@@ -26,8 +26,8 @@ spec:
         volumeMounts:
         - mountPath: "/conf"
           subPath: esphome
-          name: esphome-storage
+          name: unraid-storage
       volumes:
-      - name: esphome-storage
+      - name: unraid-storage
         persistentVolumeClaim:
           claimName: unraid-pvc
