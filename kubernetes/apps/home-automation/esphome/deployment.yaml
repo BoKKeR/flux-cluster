@@ -23,3 +23,11 @@ spec:
         envFrom:
         - configMapRef:
             name: esphome
+        volumeMounts:
+        - mountPath: "/conf"
+          subPath: esphome
+          name: esphome-storage
+      volumes:
+      - name: epshome-storage
+        persistentVolumeClaim:
+          claimName: unraid-pvc
