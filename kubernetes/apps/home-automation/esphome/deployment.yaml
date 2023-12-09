@@ -28,6 +28,6 @@ spec:
           subPath: esphome
           name: esphome-storage
       volumes:
-      - name: epshome-storage
+      - name: esphome-storage
         persistentVolumeClaim:
           claimName: unraid-pvc
