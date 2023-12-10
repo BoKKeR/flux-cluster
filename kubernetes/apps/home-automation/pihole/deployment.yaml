@@ -70,6 +70,7 @@ spec:
         # the policy to upsert-only so they do not get deleted.
         - --policy=upsert-only
         - --provider=pihole
+        - --interval=10m0s
         # Change this to the actual address of your Pi-hole web server
         - --pihole-server=http://10.0.0.5
       securityContext:
