@@ -4,7 +4,7 @@ metadata:
   namespace: home-automation
   name: esphome
 spec:
-  ingressClassName: nginx
+  ingressClassName: internal
   rules:
   - host: esphome.tnorbert.com
     http:
