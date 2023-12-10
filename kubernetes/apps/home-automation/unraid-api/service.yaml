@@ -10,5 +10,5 @@ spec:
   ports:
   - name: webui
     protocol: TCP
-    port: 3005
+    port: 80
     targetPort: 3005
