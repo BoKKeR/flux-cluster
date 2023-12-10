@@ -3,13 +3,10 @@ kind: Service
 metadata:
   name: mosquitto
   namespace: home-automation
-  annotations:
-    metallb.universe.tf/allow-shared-ip: "key-to-share-10.0.0.21"
 spec:
   selector:
     app: mosquitto
   type: LoadBalancer
-  loadBalancerIP: 10.0.0.21
   ports:
   - name: webui
     protocol: TCP
