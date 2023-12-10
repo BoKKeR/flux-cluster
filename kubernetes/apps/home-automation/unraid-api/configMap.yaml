@@ -7,3 +7,6 @@ data:
   MQTTUser: "BoKKeR"
   MQTTBaseTopic: homeassistant
   KeyStorage: config
+  MQTTPort: "1883"
+  WRITE_HTML_OUTPUT: "true"
+  MQTTBroker: "mosquitto"
