@@ -25,7 +25,7 @@ spec:
         - configMapRef:
             name: esphome
         volumeMounts:
-        - mountPath: "/conf"
+        - mountPath: "/config"
           subPath: esphome
           name: unraid-storage
       volumes:
