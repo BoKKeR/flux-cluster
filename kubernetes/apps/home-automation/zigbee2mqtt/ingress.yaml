@@ -4,7 +4,7 @@ metadata:
   namespace: home-automation
   name: zigbee2mqtt
 spec:
-  ingressClassName: nginx
+  ingressClassName: internal
   rules:
   - host: z2m.tnorbert.com
     http:
@@ -14,5 +14,5 @@ spec:
         backend:
           service:
             name: zigbee2mqtt
-            port: 
+            port:
               number: 9442

@@ -4,7 +4,7 @@ metadata:
   namespace: home-automation
   name: appdaemon
 spec:
-  ingressClassName: nginx
+  ingressClassName: internal
   rules:
   - host: appdaemon.tnorbert.com
     http:
@@ -14,5 +14,5 @@ spec:
         backend:
           service:
             name: appdaemon
-            port: 
+            port:
               number: 5050
