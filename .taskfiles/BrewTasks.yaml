@@ -1,4 +1,5 @@
 ---
+# yaml-language-server: $schema=https://taskfile.dev/schema.json
 version: "3"
 
 tasks:
@@ -18,6 +19,8 @@ tasks:
         cloudflared
         fluxcd/tap/flux
         helm
+        jq
+        k9s
         kubernetes-cli
         kustomize
         sops
